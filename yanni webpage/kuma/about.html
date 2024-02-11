@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url('images/wood.jpg');
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-size: 100% 100%;
+            text-align: center;
+            color: #fff;
+        }
+
+        header {
+            background: radial-gradientz(#242716 ,#020024 );
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background: rgb(36,39,22);
+            background: radial-gradient(circle, rgba(36,39,22,1) 25%, rgba(2,0,36,1) 83%);
+            color: #fff;
+            text-align: center;
+            padding: 0.5em 0;
+        }
+            
+        #nav-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+
+        section {
+            height: 50%;
+            object-fit: fill;
+
+        }
+        article{
+            background-color: #020024;
+            color: white;
+            height: 90%;
+            margin-bottom: 4.5%;
+        }
+
+        footer {
+            background: rgb(36,39,22);
+            background: radial-gradient(circle, rgba(36,39,22,1) 25%, rgba(2,0,36,1) 83%);
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position:fixed;
+            bottom: 0%;
+            width: 100%;
+        }
+        #img{
+            align-items: center;
+            display: flex;
+            margin-right: 50%;
+            margin-left: 16%;
+            width: 100%;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="nav-container">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        </div>
+        <img src="images/Picture1.png" alt="" width="5%" height="5%">
+        <div id="nav-container">
+        <a href="about.html">About Us</a>
+        <a href="about2.html">Contact</a>
+        </div>
+    </nav>
+
+    <section>
+        <h1> About Us </h1>
+        <div id="img">
+            <img id="myimg" src="images/coffe/1.webp">
+        </div>
+        <button onclick="left()">&lt</button>
+        <button onclick="right()">&gt</button> 
+    </section>
+    <script>
+        images=["1.webp","3.jpg","4.jpg"]
+        let i=0;
+        function left(){
+            document.getElementById("myimg").src="images/coffe/" + images[i++]
+            if (i>2){
+                i=0;
+            }
+        }
+
+        function right(){
+            document.getElementById("myimg").src="images/coffe/" + images[i--]
+            if (i<0){
+                i=2;
+            }
+        }
+        setInterval(right,2500)
+    </script>
+    <article>
+        <h1>About Kuma Qatar</h1>
+
+    <pre>to Kuma, a haven of creativity and style nestled in the heart of Qatar. At Kuma, 
+            we believe in the power of design to elevate everyday living, 
+    and our mission is to bring a touch of sophistication and innovation to your home.
+    </pre>
+
+    <h1>Our Story</h1>
+    
+    <pre>   Founded in 2010, 
+                     Kuma emerged from a passion for blending timeless aesthetics with modern functionality. 
+                            We understand that your living space is an extension of your personality, 
+        and our curated collection of furniture and decor reflects a commitment to quality craftsmanship and contemporary design.
+    </pre>
+
+    <h1>Craftsmanship and Quality</h1>
+    <pre>   Quality is at the core of everything we do. 
+            We work with skilled artisans and renowned manufacturers to ensure that every Kuma product meets the highest standards of craftsmanship.
+            From luxurious sofas to elegant lighting, 
+            our collection is a testament to our dedication to providing you with enduring, well-crafted pieces that stand the test of time.</pre>
+    </article>
+
+
+
+
+
+    <footer>
+        <p>&copy; 2024 Kuma. All rights reserved.</p>
+    </footer>
+</body>
+</html>

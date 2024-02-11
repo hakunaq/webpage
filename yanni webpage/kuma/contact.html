@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        
+
+        header {
+            background-color: black;
+            color:rgb(255, 255, 255);
+            padding: 1em 0;
+            display: flex;
+            margin-left: 47%;
+            margin-right: 55%;
+            margin-top: 0;
+        }
+
+        nav {
+            background: rgb(36,39,22);
+            background: radial-gradient(circle, rgba(36,39,22,1) 25%, rgba(2,0,36,1) 83%);
+            color: #fff;
+            text-align: center;
+            padding: 0.5em 0;
+        }
+            
+        #nav-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+        
+            
+        }
+
+        section {
+            padding: 2em;
+            color: #f70c0c;
+            background-color: #c6f300;
+            height: 3000%;
+            width: 40%;
+            
+        }
+        aside{ 
+            background-color: aqua;
+            margin-right: 0%;
+            width: 30%;
+        }
+
+        footer {
+            background: rgb(36,39,22);
+            background: radial-gradient(circle, rgba(36,39,22,1) 25%, rgba(2,0,36,1) 83%);
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0%;
+            width: 100%;
+
+        }
+        #img{
+            position: absolute;
+            text-align: center;
+            align-items: center;
+            justify-content: cs;
+        }
+        #loco{
+            position: absolute;
+            top: 0%;
+        }
+        #map{
+            right: 0%;
+
+        }
+        #about{
+            height: 30px;
+            width: 80px;
+            border: 1px blue solid;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div id="nav-container">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        </div>
+        <img src="images/Picture1.png" alt="" width="5%" height="5%">
+        <div id="nav-container">
+        <a href="about.html">About Us</a>
+        <a href="about2.html">Contact</a>
+        </div>
+    </nav>
+    <header>
+   
+        <h1>About Us</h1>
+    
+    </header>
+    <section>
+        <h2>Contact Us</h2>
+        <p>Phone: +974 6067 2394</p>
+        <p>Email:infokuma@gmail.com</p>
+        <p>Website:kumakuma.com</p>
+        <p>Reach out to us for reservations and inquiries.</p>
+        <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=ain%20kalid%20%20doha+(Kuma%20)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        <form>
+            <label for="fname">Name or username </label>
+            <input type="text" id="fname" name="fname"/><br>
+            <label for="fname">Email</label>
+            <input type="email" id="email" name="email" /><br>
+            <label for="phone">Enter a phone number:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="5646-6072"
+              pattern="[0-9]{4}-[0-9]{4}"
+              required
+            /><br>
+            <label for="topic"></label>
+            <select name="topic">
+                <option value="">select a topic</option>
+                <option value="Food and Nutrition">Food and Nutrition</option>
+                <option value="Resturant Feedback">Resturant Feedback</option>
+                <option value="Customer Service">Customer Service</option>
+                <option value="Food & Drinks Quality">Food & Drinks Quality</option>
+                <option value="other">other</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select><br>
+            <label for="text">Enter your comment</label>
+<br>
+            <textarea id="text" name="text" rows="4" cols="50">
+            Enter text here...
+</textarea>
+        </form>
+        
+    </section>
+    <aside>
+        <form>
+            <label for="fname">Name or username </label>
+            <input type="text" id="fname" name="fname"/><br>
+            <label for="fname">Email</label>
+            <input type="email" id="email" name="email" /><br>
+            <label for="phone">Enter a phone number:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="5646-6072"
+              pattern="[0-9]{4}-[0-9]{4}"
+              required
+            /><br>
+            <label for="topic"></label>
+            <select name="topic">
+                <option value="">select a topic</option>
+                <option value="Food and Nutrition">Food and Nutrition</option>
+                <option value="Resturant Feedback">Resturant Feedback</option>
+                <option value="Customer Service">Customer Service</option>
+                <option value="Food & Drinks Quality">Food & Drinks Quality</option>
+                <option value="other">other</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select><br>
+            <label for="text">Enter your comment</label>
+<br>
+            <textarea id="text" name="text" rows="4" cols="50">
+            Enter text here...
+</textarea>
+        </form>
+        <p>aside</p>
+    </aside>
+    <footer>
+        <p>&copy; 2024 Kuma. All rights reserved.</p>
+    </footer>
+</body>
+</html>
